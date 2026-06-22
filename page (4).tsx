@@ -1,3 +1,0 @@
-import Link from 'next/link'
-import { verbs } from '@/data/verbs'
-export default function Verbs(){ return <div className="space-y-5"><h1 className="text-2xl font-semibold">動詞一覧</h1><input className="w-full rounded-2xl border bg-white px-4 py-3" placeholder="Search verbs..." /><div className="divide-y rounded-2xl bg-white shadow-sm">{verbs.map(v=><Link href={`/verbs/${v.id}`} key={v.id} className="flex items-center justify-between p-4"><div><p className="font-semibold">{v.word}</p><p className="text-sm text-gray-500">Rank {v.rank}</p></div><span className="text-gray-400">›</span></Link>)}</div></div> }
