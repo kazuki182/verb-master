@@ -1,0 +1,2 @@
+import Link from 'next/link';import {verbs} from '@/lib/data';
+export default function Verbs(){return <div className="space-y-5"><h1 className="text-2xl font-semibold">動詞一覧</h1><input className="w-full rounded-xl border p-3" placeholder="Search verbs..."/><div className="space-y-3">{verbs.map(v=><Link key={v.id} href={`/verbs/${v.id}`} className="card p-4 flex justify-between"><div><b>{v.word}</b><p className="text-sm text-gray-500">{v.core}</p></div><span>{v.status==='done'?'✓':v.status==='learning'?'○':''}</span></Link>)}</div></div>}

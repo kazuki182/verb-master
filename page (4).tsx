@@ -1,0 +1,1 @@
+export default function Tests(){return <div className="space-y-5"><h1 className="text-2xl font-semibold">テスト</h1>{['今日のテスト','苦手単語テスト','全単語テスト','A4 PDF出力'].map(x=><div className="card p-5" key={x}>{x}</div>)}<section className="card p-5"><p>1. I _____ home at 8.</p><p className="mt-3">2. Let’s _____ a break.</p></section></div>}
